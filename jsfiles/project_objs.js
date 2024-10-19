@@ -2,10 +2,11 @@ let OfMiceAndFrogs = new Project(
     "Of Mice and Frogs",
     ["Unity Game Engine", "C#", "GitHub"],
     Status.Finished,
-    `This is a game my teammates and I made for "Game Design Studio" at northwestern university. 
+    `This is a game my teammates and I made for "Game Design Studio" at Northwestern University. 
     Once can conceptualize this class as a kind of game development capstone class and this project is the largest software engineering endeavour which I have undertaken.
-    In the game you play as a little mouse that uses a yoyo to fight through an army of frogs in a dungeon.
-    I was in charge of the player controller, the map system, and the pause menus`,
+    <br> In the game you play as a little mouse that uses a yoyo to fight through an army of frogs in a dungeon.
+    <br> I was in charge of the player controller, the map system, and the pause menus.
+    <br> Collaborated with: Evan Bertis-Sample, Tae In Shim, and Matthew Khoriaty`,
     "https://anthonyalvarez08.itch.io/of-mice-and-frogs",
 );
 
