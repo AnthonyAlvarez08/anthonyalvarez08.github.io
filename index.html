@@ -1,3 +1,15 @@
+<!-- 
+TODO: work experience
+TODO: education
+TODO: add more projects
+TODO: separate current and past projects maybe
+TODO: style a bit better I guess
+TODO: webGL demo?
+
+
+-->
+
+
 <!DOCTYPE html>
 
 <html>
@@ -8,11 +20,15 @@
 
     <link rel="stylesheet" href="./styles.css" />
 
+    <script src="./jsfiles/main.js"></script>
+    <script src="./jsfiles/Project.js"></script>
+    <script src="./jsfiles/project_objs.js"></script>
+
 </head>
 
 
 
-<body>
+<body onload="onload()">
 
     <div id="nav-bar">
         <nav>
@@ -56,8 +72,8 @@
     <div id="intro">
         <h2 class="centered">Hello! I am Anthony</h2>
 
-        <p>I am currently a 3rd year Computer Science major at Northwestern University with interests in cyber security,
-            video games, and embbeded systems</p>
+        <p>I am currently a 3rd year Computer Science major at Northwestern University with interests in robotics, cyber security,
+            video games, and cycling.</p>
 
         <img class="image-fit" src="./pictures/me_in_a_suit.jpg" />
 
@@ -65,15 +81,67 @@
 
     </div>
 
+    <div id="affiliationsWork" class="subsection">
+        <h3>Current Employment and Affiliations</h3>
+        <li>
+            <p>
+                <b>Northwestern University Robotics Club</b>
+                <br>
+                Combat Robotics sub team 2022-2024
+                <br>
+                Automated Lacrosse Goalie sub team 2024-present
+            </p>
 
-    <div id="ProjectSelectionBar">
+        </li>
+        
+    </div>
+
+
+    <div id="education" class="subsection">
+        <h3>Education</h3>
+
+        <li>
+            <p>
+                <b>Northwestern University</b>
+                BS in Computer Science. Expected graduation: June 2026.
+                <br> GPA: 3.97/4.00
+            </p>
+
+        </li>
+        
+
+        <li>
+            <p>
+                <b>Kalamazoo Central High School</b>
+                High School Diploma. Graduated May 2022.
+            </p>
+        </li>
+        
+
+        <li>
+            <p>
+                <b>Kalamazoo Area Mathematics and Science Center</b>
+                High School (dual enrolled). Graduated May 2022.
+            </p>
+        </li>
+        
+        
+    </div>
+
+
+    <div id="projectSelectionBar" class="subsection">
 
     </div>
 
 
-    <div id="projects">
+    <div id="projectPane">
+        <h3>My Projects</h3>
+        <div id="projects" class="subsection">
       
+        </div>
+
     </div>
+    
 
     
 
