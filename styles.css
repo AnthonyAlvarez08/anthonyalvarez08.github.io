@@ -44,6 +44,7 @@
 
 .subsection > li {
     margin-left:30px;
+    margin-right: 30px;
     list-style-type: none;
 }
 
@@ -56,6 +57,12 @@
 .status-wip {
     border-color: darkgoldenrod;
     color:darkgoldenrod;
+    font-weight: bold;
+}
+
+.status-not-started {
+    border-color: red;
+    color:red;
     font-weight: bold;
 }
 
@@ -77,4 +84,6 @@ h4 {
     border-style: solid;
     padding: 10px;
 }
+
+
 

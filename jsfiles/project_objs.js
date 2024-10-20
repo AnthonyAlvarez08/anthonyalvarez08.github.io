@@ -82,3 +82,19 @@ let lax = new Project(
 
 
 let ProjectList = [OfMiceAndFrogs, lax, Clood, tulin, DTC];
+
+
+
+
+let tockDriver = new Project(
+    "SPI and WiFi driver for TockOS and a Raspberry Pi microcontroller",
+    ["Rust", "Raspberry Pi"],
+    Status.NotStarted,
+    `
+    <p>This coming January, my teammate Jason Hu and I will be mentored by professeor Branden Ghena to develop a wifi driver for TockOS, an operating sytem designed for microcontrollers.</p>
+    <p>Estimated completion time: April 2025</p>
+    
+    `
+);
+
+let ComingSoon = [tockDriver];
