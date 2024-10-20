@@ -32,7 +32,8 @@ function onload() {
                     ${link}                    
                 </h4>
 
-                <span>Status: ${proj.Status}</span>
+                <span>Status: ${proj.Status}</span><br>
+                <span>Tools Used: ${proj.TechUsed.join(" | ")}  </span>
                 <p>${proj.Description}</p>
                 
 

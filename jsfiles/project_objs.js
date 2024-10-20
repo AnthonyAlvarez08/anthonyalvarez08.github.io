@@ -58,10 +58,10 @@ let lax = new Project(
     ["Python", "OpenCV", "NumPy"],
     Status.InProgress,
     `
-    <p>NURC wants to make an automated lacrosse goalie that can stop any shot from a lacrosse player and I will be leading the computer vision side of things.</p>
-    <p>Currently the goalie consists of a frame that can move a stopper on a 2D axis in front of the goal and it is controlled by a PS4 controller</p>
-    <p>Our goal is to make it fully autonomous by the end of this school year</p>
-
+    <span>NURC wants to make an automated lacrosse goalie that can stop any shot from a lacrosse player and I will be leading the computer vision side of things.</span>
+    <br><span>Currently the goalie consists of a frame that can move a stopper on a 2D axis in front of the goal and it is controlled by a PS4 controller.</span>
+    <br><span>Our goal is to make it fully autonomous by the end of this school year.</span>
+    <br><br>
     <p>Goals for this project:</p>
     <ul>
         <li>Main Goal: The robot should be able to stop any shot from outside a 12 meter radius</li>
