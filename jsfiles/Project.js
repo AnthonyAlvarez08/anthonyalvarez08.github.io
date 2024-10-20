@@ -1,7 +1,7 @@
 
 const Status = {
-    Finished: "Finished",
-    InProgress: "Work in Progress"
+    Finished: `<span class="status-finished">Finished </span>`,
+    InProgress: `<span class="status-wip">Work In Progress</span>`
 }
 
 class Project {

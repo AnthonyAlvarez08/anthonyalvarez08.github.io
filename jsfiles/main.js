@@ -7,18 +7,32 @@ function onload() {
     var projDiv = document.getElementById("projects");
 
 
+    var classes = ["light-proj", "dark-proj"];
+    var flip = 0;
+
     var stg = ``;
     for (var proj of ProjectList) {
-        stg = stg.concat(
-            `
-            <li>
-                <h4>
-                    ${proj.Title}
 
+
+        var link = '';
+        if (proj.Link != "") {
+            link = `
                     <a href="${proj.Link}" target="_blank" rel="noopener noreferrer">
                         <button>link</button>
                     </a> 
+            `
+        }
+
+        stg = stg.concat(
+            `
+            <li class=${classes[flip]}>
+                <h4>
+                    ${proj.Title}
+
+                    ${link}                    
                 </h4>
+
+                <span>Status: ${proj.Status}</span>
                 <p>${proj.Description}</p>
                 
 
@@ -26,6 +40,9 @@ function onload() {
             
             `
         );
+
+        flip += 1;
+        flip %= 2;
     }
 
 
