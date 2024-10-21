@@ -77,7 +77,8 @@ let lax = new Project(
         <li>Extra Goal: The robot should be able to stop any shot from outside an 8 meter radius</li>
     </ul>
 
-    <p>Evaluation plan: Gather Northwestern's women's lacrosse team to take shots at the goalie.</p>
+    <p>NURC will evaluate its performance by pitting it against Northwestern's women's lacrosse team 
+    - the #1 ranked team and second place in the NCAA D1 womens lacrosse championship.</p>
 
     <p>Estimated completion time: May 2025</p>
 

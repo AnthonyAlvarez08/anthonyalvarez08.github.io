@@ -1,6 +1,7 @@
 #all {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #00274f;
+    font-size: medium;
 }
 
 
@@ -26,6 +27,7 @@
     color: white;
 }
 
+
 #nav-bar {
     background-color: #00274f;
     color: white;
@@ -37,15 +39,20 @@
     top:0;
     left:0;
     text-align: center;
+    position: sticky;
     
     
 }
 
+/* .subsection {
+    padding-bottom: 60px;
+} */
 
 .subsection > li {
     margin-left:30px;
     margin-right: 30px;
     list-style-type: none;
+    
 }
 
 .status-finished {
@@ -97,4 +104,52 @@ h4 {
 
 .proj-image {
     height: 300px;
+}
+
+
+#interestsTable > td, tr, th, table {
+    border: solid #00274f;
+    border-collapse: collapse;
+    margin-left:30px;
+    margin-right: 30px;
+    font-size: medium;
+    
+}
+
+.interestEntry {
+    padding: 10px;
+}
+
+.anchor {
+    position: absolute;
+    transform: translateY(-15vh);
+    visibility: hidden;
+  }
+
+
+.title > a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+.title {
+    display: inline;
+}
+
+#projects > li {
+    padding: 10px;
+}
+
+
+/* all my subtitle are in h3 anyway*/
+h3 {
+    padding-top: 30px;
+}
+
+
+.linelol {
+    color: #00274f;
+    background-color: #00274f;
+    height: 5px;
 }
