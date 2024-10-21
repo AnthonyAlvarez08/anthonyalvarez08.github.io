@@ -3,7 +3,7 @@ let OfMiceAndFrogs = new Project(
     ["Unity Game Engine", "C#", "GitHub"],
     Status.Finished,
     `This is a game my teammates and I made for "Game Design Studio" at Northwestern University. 
-    Once can conceptualize this class as a kind of game development capstone class and this project is the largest software engineering endeavour which I have undertaken.
+    Once can conceptualize this class as a kind of game development capstone class and this project is the largest software engineering endeavour which I have undertaken. In terms of metrics, I have 112 commits to this project.
     <br> In the game you play as a little mouse that uses a yoyo to fight through an army of frogs in a dungeon.
     <br> I was in charge of the player controller, the map system, and the pause menus.
     <br> Collaborated with: Evan Bertis-Sample, Tae In Shim, and Matthew Khoriaty.`,
@@ -90,9 +90,13 @@ let lax = new Project(
 let tockDriver = new Project(
     "SPI and WiFi driver for TockOS and a Raspberry Pi microcontroller",
     ["Rust", "Raspberry Pi"],
-    Status.InProgress,
+    Status.NotStarted,
     `
-    <p>This coming January, my teammate Jason Hu and I will be mentored by professeor Branden Ghena to develop a wifi driver for TockOS, an operating sytem designed for microcontrollers.</p>
+    <p>
+        This coming January, my teammate Jason Hu and I will be mentored by professeor Branden Ghena to develop a WiFi driver for Tock OS, an operating sytem designed for microcontrollers.
+        <br> These drivers will run on a Raspberry Pi Pico series microcontroller with a WiFi card.
+    </p>
+    
     <p>Estimated completion time: April 2025</p>
     
     `
@@ -100,5 +104,5 @@ let tockDriver = new Project(
 
 
 
-let ProjectList = [OfMiceAndFrogs, lax, tulin, tockDriver, DTC];
-let ComingSoon = [Clood];
+let ProjectList = [OfMiceAndFrogs, lax, tulin, DTC];
+let ComingSoon = [Clood, tockDriver];
