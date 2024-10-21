@@ -95,18 +95,7 @@ function onload() {
 
 
     projDiv.innerHTML = stg;
-    var stg2 = ``;
-    var comingSoonDiv = document.getElementById("comingSoon");
-    flip = 0;
-    for (var proj of ComingSoon)
-    {
-        stg2 = stg2.concat(projFormat(proj, classes[flip]));
 
-        flip += 1;
-        flip %= 2;
-    }
-
-    comingSoonDiv.innerHTML = stg2;
 
 
     //* handle work experiences

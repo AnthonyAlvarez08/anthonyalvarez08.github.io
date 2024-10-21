@@ -73,7 +73,7 @@ let lax = new Project(
     `
     <span>NURC wants to make an automated lacrosse goalie that can stop any shot from a lacrosse player and I will be leading the computer vision side of things.</span>
     <br><span>Currently the goalie consists of a frame that can move a stopper on a 2D axis in front of the goal and it is controlled by a PS4 controller.</span>
-    <br><span>Our goal is to make it fully autonomous by the end of this school year.</span>
+    <br><span>Our goal is to make it fully autonomous by the end of this school year. We will use OpenCV and python to do so.</span>
     <br><br>
     <p>Goals for this project:</p>
     <ul>
@@ -95,7 +95,7 @@ let lax = new Project(
 let tockDriver = new Project(
     "SPI and WiFi driver for TockOS and a Raspberry Pi microcontroller",
     ["Rust", "Raspberry Pi"],
-    Status.NotStarted,
+    Status.InProgress,
     `
     <p>
         This coming January, my teammate Jason Hu and I will be mentored by professeor Branden Ghena to develop a WiFi driver for Tock OS, an operating sytem designed for microcontrollers.
@@ -122,5 +122,5 @@ let codelabs = new Project(
 );
 
 
-let ProjectList = [OfMiceAndFrogs, lax, tulin, DTC, codelabs];
-let ComingSoon = [Clood, tockDriver];
+let ProjectList = [OfMiceAndFrogs, lax, tulin, Clood, DTC, tockDriver, codelabs];
+// let ComingSoon = [Clood, tockDriver];
