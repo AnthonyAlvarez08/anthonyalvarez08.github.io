@@ -44,7 +44,7 @@ function projFormat(proj, class_) {
                 ${github}               
             </h4>
             <span>Status: ${proj.Status}</span><br>
-            <span>Tools Used: ${proj.TechUsed.join(" | ")}  </span>
+            <span>Tools/Skills Used: ${proj.TechUsed.join(" | ")}  </span>
 
             ${pics}
             <p>${proj.Description}</p>

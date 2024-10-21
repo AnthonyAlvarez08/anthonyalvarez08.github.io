@@ -20,6 +20,8 @@ let Clood = new Project(
     ["AWS", "MySQL", "Python", "Flask", "HTML", "JavaScript", "SQL"],
     Status.InProgress,
     `<p>Clood is a cloud based to do app/website to let you keep track of your task lists across devices.</p>
+    <p>I started this project to show that I can apply what I learned in the Scalable Software Architectures class at Northwestern.</p>
+    <p>I will be taking inspiration from the app TickTick which is what I actually use to manage my own task list.</p>
     <p>Not yet deployed as it is in the early stages of development.</p>`,
     "https://github.com/AnthonyAlvarez08/TodoApp"
 );
@@ -27,7 +29,7 @@ let Clood = new Project(
 
 let DTC = new Project(
     "Table Extension - Design Thinking and Communication project",
-    ["Bridgerport Mill"],
+    ["Bridgerport Mill", "Project Management", "Leadership"],
     Status.Finished,
     `<p>Tool to aid in physical therapy for patients with hemiparesis. It stops patients' arms from falling off the table.</p>
     <p>This prototype was developed for Dr. Andrew Morris at the Shirley Ryan Ability Lab.</p>
