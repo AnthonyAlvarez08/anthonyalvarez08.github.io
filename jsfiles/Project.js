@@ -13,9 +13,10 @@ class Project {
     ImagePaths = [];
     TechUsed = [];
     Link = "";
+    GitHub = "";
     Status = Status.InProgress;
 
-    constructor(title, techUsed, status, desc="", link="", thumbnail="", images=[]) {
+    constructor(title, techUsed, status, desc="", github="", link="", thumbnail="", images=[]) {
         this.Title = title;
         this.TechUsed = techUsed;
         this.Description = desc;
@@ -23,6 +24,7 @@ class Project {
         this.ImagePaths = images;
         this.Link = link;
         this.Status = status;
+        this.GitHub = github;
     }
 
 }

@@ -1,5 +1,62 @@
 
 
+function projFormat(proj, class_) {
+    var stg = ``;
+
+    var link = '';
+    if (proj.Link != "") {
+        link = `
+                <a href="${proj.Link}" target="_blank" rel="noopener noreferrer">
+                    <span class="link-button">LINK</span>
+                </a> 
+        `
+    }
+    var github = '';
+    if (proj.GitHub != "") {
+        github = `
+                <a href="${proj.GitHub}" target="_blank" rel="noopener noreferrer">
+                    <span class="link-button">GitHub Repo</span>
+                </a> 
+        `
+    }
+
+
+    var pics = ``;
+    if (proj.ImagePaths.length > 0)
+    {
+        for (var pic of proj.ImagePaths) {
+            pics = pics.concat(
+                `<img src="./pictures/${pic}" class="proj-image"/>`
+            );
+        }
+    }
+
+    pics = "<p>" + pics + "</p>";
+
+
+
+    stg = stg.concat(
+        `
+        <li class=${class_}>
+            <h4>
+                ${proj.Title}
+                ${link}
+                ${github}               
+            </h4>
+            <span>Status: ${proj.Status}</span><br>
+            <span>Tools Used: ${proj.TechUsed.join(" | ")}  </span>
+
+            ${pics}
+            <p>${proj.Description}</p>
+            
+        </li>
+        
+        `
+    );
+
+    return stg;
+}
+
 function onload() {
     console.log("Hello there! peeking the browser console I see?");
 
@@ -14,33 +71,7 @@ function onload() {
     for (var proj of ProjectList) {
 
 
-        var link = '';
-        if (proj.Link != "") {
-            link = `
-                    <a href="${proj.Link}" target="_blank" rel="noopener noreferrer">
-                        <button>link</button>
-                    </a> 
-            `
-        }
-
-        stg = stg.concat(
-            `
-            <li class=${classes[flip]}>
-                <h4>
-                    ${proj.Title}
-
-                    ${link}                    
-                </h4>
-
-                <span>Status: ${proj.Status}</span><br>
-                <span>Tools Used: ${proj.TechUsed.join(" | ")}  </span>
-                <p>${proj.Description}</p>
-                
-
-            </li>
-            
-            `
-        );
+        stg = stg.concat(projFormat(proj, classes[flip]));
 
         flip += 1;
         flip %= 2;
@@ -55,33 +86,7 @@ function onload() {
     var comingSoonDiv = document.getElementById("comingSoon");
     for (var proj of ComingSoon)
     {
-        var link = '';
-        if (proj.Link != "") {
-            link = `
-                    <a href="${proj.Link}" target="_blank" rel="noopener noreferrer">
-                        <button>link</button>
-                    </a> 
-            `
-        }
-
-        stg2 = stg2.concat(
-            `
-            <li class=${classes[flip]}>
-                <h4>
-                    ${proj.Title}
-
-                    ${link}                    
-                </h4>
-
-                <span>Status: ${proj.Status}</span><br>
-                <span>Tools Used: ${proj.TechUsed.join(" | ")}  </span>
-                <p>${proj.Description}</p>
-                
-
-            </li>
-            
-            `
-        );
+        stg2 = stg2.concat(projFormat(proj, classes[flip]));
 
         flip += 1;
         flip %= 2;

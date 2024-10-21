@@ -7,7 +7,10 @@ let OfMiceAndFrogs = new Project(
     <br> In the game you play as a little mouse that uses a yoyo to fight through an army of frogs in a dungeon.
     <br> I was in charge of the player controller, the map system, and the pause menus.
     <br> Collaborated with: Evan Bertis-Sample, Tae In Shim, and Matthew Khoriaty.`,
+    "",
     "https://anthonyalvarez08.itch.io/of-mice-and-frogs",
+    "",
+    ["OfMiceAndFrogsTitleScreen.png", "omaf_screenshot3.png"],
 );
 
 
@@ -16,7 +19,8 @@ let Clood = new Project(
     "Clood To-Do app",
     ["AWS", "MySQL", "Python", "Flask", "HTML", "JavaScript", "SQL"],
     Status.InProgress,
-    "Clood is a cloud based to do app to let you keep track of your task lists across devices.",
+    `<p>Clood is a cloud based to do app/website to let you keep track of your task lists across devices.</p>
+    <p>Not yet deployed as it is in the early stages of development.</p>`,
     "https://github.com/AnthonyAlvarez08/TodoApp"
 );
 
@@ -26,12 +30,15 @@ let DTC = new Project(
     ["Bridgerport Mill"],
     Status.Finished,
     "Tool to aid in physical therapy for patients with hemiparesis. It stops patients' arms from falling off the table.",
-    "https://sites.google.com/u.northwestern.edu/dtc26-team1/home"
+    "",
+    "https://sites.google.com/u.northwestern.edu/dtc26-team1/home",
+    "",
+    ["table_extension.png"]
 
 );
 
 let tulin = new Project(
-    "Tulin - Mini Bot for Deathpact the combat robot",
+    "Tulin - Mini Bot for Deathpact the 30lb combat robot",
     ["SolidWorks", "3D Printing", "Prusa Slicer"],
     Status.Finished,
     `<p>Northwestern University's Robotics Club regularly competes in NHRL, the US's biggest combat robotics competition for the 30lb weight class. </p>
@@ -48,9 +55,11 @@ let tulin = new Project(
     </ul>
  
     <p>
-    <!--Should I even keep this?--->
-    Sad note:
-    Changes to NHRL regulations about multi-bots mean that mini-bots are not meta anymore and it is unlikely that Tulin will get to participate more fights.</p>`,
+   `, 
+   "",
+   "",
+   "",
+   ["Tulin.jpg", "TulinBadge.jpg"]
 );
 
 let lax = new Project(
@@ -78,18 +87,10 @@ let lax = new Project(
 );
 
 
-
-
-
-let ProjectList = [OfMiceAndFrogs, lax, Clood, tulin, DTC];
-
-
-
-
 let tockDriver = new Project(
     "SPI and WiFi driver for TockOS and a Raspberry Pi microcontroller",
     ["Rust", "Raspberry Pi"],
-    Status.NotStarted,
+    Status.InProgress,
     `
     <p>This coming January, my teammate Jason Hu and I will be mentored by professeor Branden Ghena to develop a wifi driver for TockOS, an operating sytem designed for microcontrollers.</p>
     <p>Estimated completion time: April 2025</p>
@@ -97,4 +98,7 @@ let tockDriver = new Project(
     `
 );
 
-let ComingSoon = [tockDriver];
+
+
+let ProjectList = [OfMiceAndFrogs, lax, tulin, tockDriver, DTC];
+let ComingSoon = [Clood];

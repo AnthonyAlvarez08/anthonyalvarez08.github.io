@@ -86,4 +86,15 @@ h4 {
 }
 
 
+.link-button {
+    color: #00274f;
+    background-color: white;
+    border-color: #00274f;
+    border-style:ridge;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
+.proj-image {
+    height: 300px;
+}
