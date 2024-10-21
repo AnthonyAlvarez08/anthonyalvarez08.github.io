@@ -97,6 +97,7 @@ function onload() {
     projDiv.innerHTML = stg;
     var stg2 = ``;
     var comingSoonDiv = document.getElementById("comingSoon");
+    flip = 0;
     for (var proj of ComingSoon)
     {
         stg2 = stg2.concat(projFormat(proj, classes[flip]));
@@ -111,6 +112,7 @@ function onload() {
     //* handle work experiences
     var workDiv = document.getElementById("work");
     var workStg = ``;
+    flip = 0;
     for (var work of workList) {
         workStg = workStg.concat(workFormat(work, classes[flip]));
 

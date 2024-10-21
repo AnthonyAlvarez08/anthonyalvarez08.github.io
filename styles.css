@@ -107,18 +107,6 @@ h4 {
 }
 
 
-#interestsTable > td, tr, th, table {
-    border: solid #00274f;
-    border-collapse: collapse;
-    margin-left:30px;
-    margin-right: 30px;
-    font-size: medium;
-    
-}
-
-.interestEntry {
-    padding: 10px;
-}
 
 .anchor {
     position: absolute;
