@@ -57,10 +57,26 @@ function projFormat(proj, class_) {
     return stg;
 }
 
+function workFormat(work, class_)
+{
+    return `
+        <li class="${class_}">
+            <p>
+                <b>${work.Company}</b>, ${work.Title}, ${work.Time}
+            </p>
+            <p>${work.Description}</p>
+            
+        </li>
+        
+        `
+}
+
 function onload() {
     console.log("Hello there! peeking the browser console I see?");
 
 
+
+    //* Handle projects
     var projDiv = document.getElementById("projects");
 
 
@@ -79,9 +95,6 @@ function onload() {
 
 
     projDiv.innerHTML = stg;
-
-
-
     var stg2 = ``;
     var comingSoonDiv = document.getElementById("comingSoon");
     for (var proj of ComingSoon)
@@ -93,6 +106,19 @@ function onload() {
     }
 
     comingSoonDiv.innerHTML = stg2;
+
+
+    //* handle work experiences
+    var workDiv = document.getElementById("work");
+    var workStg = ``;
+    for (var work of workList) {
+        workStg = workStg.concat(workFormat(work, classes[flip]));
+
+        flip += 1;
+        flip %= 2;
+    }
+
+    workDiv.innerHTML = workStg;
 
 
 

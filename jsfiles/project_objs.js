@@ -106,6 +106,19 @@ let tockDriver = new Project(
 );
 
 
+let codelabs = new Project(
+    "CodeDay Labs Summer Program Project",
+    ["Python", "Flask", "HTML"],
+    Status.Finished,
+    `My teammates and I developed a simple web-based card game in collaboration with Python and Flask.
+    <br>I programmed the game logic in Python as well as real time cross-game communication with Socket.IO.
+    <br>My teammates and I were the only beginner track team recognized by CodeDay Labs and featured on the CodeDay blog for outstanding project work (see link above).
+    
+    `,
+    "https://github.com/AnthonyAlvarez08/CodeLabs-Gamedev",
+    "https://blog.codeday.org/codeday-labs-2020",
+);
 
-let ProjectList = [OfMiceAndFrogs, lax, tulin, DTC];
+
+let ProjectList = [OfMiceAndFrogs, lax, tulin, DTC, codelabs];
 let ComingSoon = [Clood, tockDriver];

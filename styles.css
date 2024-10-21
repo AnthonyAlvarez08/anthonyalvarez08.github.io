@@ -153,3 +153,13 @@ h3 {
     background-color: #00274f;
     height: 5px;
 }
+
+
+.tab {
+    /* tab-size: 16; / for e.g: value = 2*/
+
+    display: inline-block;
+    margin-left: 40px;
+    align-items: end;
+    
+}
