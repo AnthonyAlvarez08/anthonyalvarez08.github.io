@@ -30,8 +30,8 @@ let DTC = new Project(
     ["Bridgerport Mill"],
     Status.Finished,
     `<p>Tool to aid in physical therapy for patients with hemiparesis. It stops patients' arms from falling off the table.</p>
-    <p>This prototype was developed for Dr. Andrew Morris at the Shirley Ryan Ability Lab</p>
-    <p>Collaborators: Maeve Brady, Candy Mei, Lucas Takayasu</p>`,
+    <p>This prototype was developed for Dr. Andrew Morris at the Shirley Ryan Ability Lab.</p>
+    <p>Collaborators: Maeve Brady, Candy Mei, Lucas Takayasu.</p>`,
     "",
     "https://sites.google.com/u.northwestern.edu/dtc26-team1/home",
     "",
@@ -80,7 +80,7 @@ let lax = new Project(
     </ul>
 
     <p>NURC will evaluate its performance by pitting it against Northwestern's women's lacrosse team 
-    - the #1 ranked team and second place in the NCAA D1 womens lacrosse championship.</p>
+    - the #1 ranked team and second place in the NCAA D1 2024 women's lacrosse championship.</p>
 
     <p>Estimated completion time: May 2025</p>
 
