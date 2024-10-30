@@ -160,3 +160,10 @@ h3 {
     align-items: end;
     
 }
+
+video {
+    padding: 20px;
+    margin: 20px;
+
+    width: 70%;
+}

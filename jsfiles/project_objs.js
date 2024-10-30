@@ -122,5 +122,23 @@ let codelabs = new Project(
 );
 
 
-let ProjectList = [OfMiceAndFrogs, lax, tulin, Clood, DTC, tockDriver, codelabs];
+
+let cs310 = new Project(
+    "Cloud Based Image Filters - Scalable Software Architectures final project",
+    ["Python", "AWS: S3 RDS Lambda", "MySQL", "OpenCV"],
+    Status.Finished,
+    `I used several AWS services such as S3, RDS, and Lambda to create a REST API that would allow users to upload and store images on the cloud, as well as perform various filters on the image.
+    <br> I used OpenCV to make a wide variety of filters such as blurring, edge detecting, "deep frying the image", and high contrast filters.
+    <br> I also built a simple CLI client in Python.
+    <p>Demo submitted for class below</p>
+    <video controls>
+        <source src="./assets/cs310_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> 
+
+    `
+
+);
+
+let ProjectList = [OfMiceAndFrogs, lax, tulin, tockDriver, cs310, Clood, DTC, codelabs];
 // let ComingSoon = [Clood, tockDriver];
