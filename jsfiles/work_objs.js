@@ -16,7 +16,7 @@ let deyoung = new Work(
 let spac = new Work(
     "Customer Service Representative",
     "Henry Crown Sports Pavillion (SPAC)",
-    "September 2022--May 2023",
+    "September 2022-May 2023",
     `
     <ul>
         <li>Enforced gym safety rules and maintained the gym in an orderly state.</li>
