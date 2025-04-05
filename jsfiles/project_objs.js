@@ -15,16 +15,16 @@ let OfMiceAndFrogs = new Project(
 
 
 
-let Clood = new Project(
-    "Clood To-Do app",
-    ["AWS", "MySQL", "Python", "Flask", "HTML", "JavaScript", "SQL"],
-    Status.InProgress,
-    `<p>Clood is a cloud based to do app/website to let you keep track of your task lists across devices.</p>
-    <p>I started this project to show that I can apply what I learned in the Scalable Software Architectures class at Northwestern.</p>
-    <p>I will be taking inspiration from the app TickTick which is what I actually use to manage my own task list.</p>
-    <p>Not yet deployed as it is in the early stages of development.</p>`,
-    "https://github.com/AnthonyAlvarez08/TodoApp"
-);
+// let Clood = new Project(
+//     "Clood To-Do app",
+//     ["AWS", "MySQL", "Python", "Flask", "HTML", "JavaScript", "SQL"],
+//     Status.InProgress,
+//     `<p>Clood is a cloud based to do app/website to let you keep track of your task lists across devices.</p>
+//     <p>I started this project to show that I can apply what I learned in the Scalable Software Architectures class at Northwestern.</p>
+//     <p>I will be taking inspiration from the app TickTick which is what I actually use to manage my own task list.</p>
+//     <p>Not yet deployed as it is in the early stages of development.</p>`,
+//     "https://github.com/AnthonyAlvarez08/TodoApp"
+// );
 
 
 let DTC = new Project(
@@ -66,45 +66,53 @@ let tulin = new Project(
    ["Tulin.jpg", "TulinBadge.jpg"]
 );
 
-let lax = new Project(
-    "Automated Lacrosse Goalie (Northwestern University Robotics Club)",
-    ["Python", "OpenCV", "NumPy"],
-    Status.InProgress,
-    `
-    <span>NURC wants to make an automated lacrosse goalie that can stop any shot from a lacrosse player and I will be leading the computer vision side of things.</span>
-    <br><span>Currently the goalie consists of a frame that can move a stopper on a 2D axis in front of the goal and it is controlled by a PS4 controller.</span>
-    <br><span>Our goal is to make it fully autonomous by the end of this school year. We will use OpenCV and python to do so.</span>
-    <br><br>
-    <p>Goals for this project:</p>
-    <ul>
-        <li>Main Goal: The robot should be able to stop any shot from outside a 12 meter radius</li>
-        <li>Extra Goal: The robot should be able to stop any shot from outside an 8 meter radius</li>
-    </ul>
+// let lax = new Project(
+//     "Automated Lacrosse Goalie (Northwestern University Robotics Club)",
+//     ["Python", "OpenCV", "NumPy"],
+//     Status.InProgress,
+//     `
+//     <span>NURC wants to make an automated lacrosse goalie that can stop any shot from a lacrosse player and I will be leading the computer vision side of things.</span>
+//     <br><span>Currently the goalie consists of a frame that can move a stopper on a 2D axis in front of the goal and it is controlled by a PS4 controller.</span>
+//     <br><span>Our goal is to make it fully autonomous by the end of this school year. We will use OpenCV and python to do so.</span>
+//     <br><br>
+//     <p>Goals for this project:</p>
+//     <ul>
+//         <li>Main Goal: The robot should be able to stop any shot from outside a 12 meter radius</li>
+//         <li>Extra Goal: The robot should be able to stop any shot from outside an 8 meter radius</li>
+//     </ul>
 
-    <p>NURC will evaluate its performance by pitting it against Northwestern's women's lacrosse team 
-    - the #1 ranked team and second place in the NCAA D1 2024 women's lacrosse championship.</p>
+//     <p>NURC will evaluate its performance by pitting it against Northwestern's women's lacrosse team 
+//     - the #1 ranked team and second place in the NCAA D1 2024 women's lacrosse championship.</p>
 
-    <p>Estimated completion time: May 2025</p>
+//     <p>Estimated completion time: May 2025</p>
 
     
     
-    `
-);
+//     `
+// );
 
 
 let tockDriver = new Project(
     "SPI and WiFi driver for TockOS and a Raspberry Pi microcontroller",
-    ["Rust", "Raspberry Pi"],
-    Status.InProgress,
+    ["Rust", "Raspberry Pi Pico", "Tock"],
+    Status.Finished,
     `
     <p>
-        This coming January, my teammate Jason Hu and I will be mentored by professeor Branden Ghena to develop a WiFi driver for Tock OS, an operating sytem designed for microcontrollers.
-        <br> These drivers will run on a Raspberry Pi Pico series microcontroller with a WiFi card.
+        An SPI driver on top of the Programmable IO Units on the RP2040 for a Raspberry Pi Pico WH. This driver was developed for <a href="https://tockos.org/">Tock OS</a> with the eventual end goal of communicating with the WiFi chip on the RP Pico WH and adding general WiFi capabilities to Tock.
+        <br> This started as a project for the Northwestern CS research track program at Northwestern University which I did with Jason Hu, and our , professor Branden Ghena.
+        <br> The driver has since been merged into the official Tock OS repository.
+
+        <br><br> Next Steps: <br>
+        <ul>
+            <li>Make a driver for the Infineon CYW43439 WiFi chip on the Raspberry Pi Pico and Tock OS</li>
+            <li>Design the hardware abstraction for WiFi and other network devices for Tock OS</li>
+        </ul>
+
     </p>
+
     
-    <p>Estimated completion time: April 2025</p>
-    
-    `
+    `,
+    "https://github.com/tock/tock/blob/master/chips/rp2040/src/pio_spi.rs"
 );
 
 
@@ -140,5 +148,4 @@ let cs310 = new Project(
 
 );
 
-let ProjectList = [OfMiceAndFrogs, lax, tulin, tockDriver, cs310, Clood, DTC, codelabs];
-// let ComingSoon = [Clood, tockDriver];
+let ProjectList = [tockDriver, OfMiceAndFrogs, tulin, cs310, DTC, codelabs];
