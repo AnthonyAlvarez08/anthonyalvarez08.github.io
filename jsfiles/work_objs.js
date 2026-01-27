@@ -27,5 +27,17 @@ let spac = new Work(
 
 );
 
+let xes = new Work(
+    "Associate Embedded Software Engineer (Co-op intern)",
+    "Extreme Engineering Solutions",
+    "January 2026-Augus 2026",
+    `
+    <ul>
+        <li>Internal tools subteam</li>
+    </ul>
+    `,
+    "Madison, Wisconsin"
+);
 
-let workList = [deyoung, spac];
+
+let workList = [xes, deyoung, spac];
