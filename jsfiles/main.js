@@ -1,116 +1,97 @@
-
-
 function projFormat(proj, class_) {
-    var stg = ``;
+  var stg = ``;
 
-    var link = '';
-    if (proj.Link != "") {
-        link = `
+  var link = "";
+  if (proj.Link != "") {
+    link = `
                 <a href="${proj.Link}" target="_blank" rel="noopener noreferrer">
                     <span class="link-button">LINK</span>
-                </a> 
-        `
-    }
-    var github = '';
-    if (proj.GitHub != "") {
-        github = `
+                </a>
+        `;
+  }
+  var github = "";
+  if (proj.GitHub != "") {
+    github = `
                 <a href="${proj.GitHub}" target="_blank" rel="noopener noreferrer">
                     <span class="link-button">GitHub Repo</span>
-                </a> 
-        `
+                </a>
+        `;
+  }
+
+  var pics = ``;
+  if (proj.ImagePaths.length > 0) {
+    for (var pic of proj.ImagePaths) {
+      pics = pics.concat(`<img src="./pictures/${pic}" class="proj-image"/>`);
     }
+  }
 
+  pics = "<p>" + pics + "</p>";
 
-    var pics = ``;
-    if (proj.ImagePaths.length > 0)
-    {
-        for (var pic of proj.ImagePaths) {
-            pics = pics.concat(
-                `<img src="./pictures/${pic}" class="proj-image"/>`
-            );
-        }
-    }
-
-    pics = "<p>" + pics + "</p>";
-
-
-
-    stg = stg.concat(
-        `
+  stg = stg.concat(
+    `
         <li class=${class_}>
             <h4>
                 ${proj.Title}
                 ${link}
-                ${github}               
+                ${github}
             </h4>
             <span>Status: ${proj.Status}</span><br>
             <span>Tools/Skills Used: ${proj.TechUsed.join(" | ")}  </span>
 
             ${pics}
             <p>${proj.Description}</p>
-            
-        </li>
-        
-        `
-    );
 
-    return stg;
+        </li>
+
+        `,
+  );
+
+  return stg;
 }
 
-function workFormat(work, class_)
-{
-    return `
+function workFormat(work, class_) {
+  return `
         <li class="${class_}">
             <p>
-                <b>${work.Company}</b>, ${work.Title}, ${work.Time}
+                <b>${work.Company}</b>, ${work.Title}
+                <br>${work.Time}
             </p>
             <p>${work.Description}</p>
-            
+
         </li>
-        
-        `
+
+        `;
 }
 
 function onload() {
-    console.log("Hello there! peeking the browser console I see?");
+  console.log("Hello there! peeking the browser console I see?");
 
+  //* Handle projects
+  var projDiv = document.getElementById("projects");
 
+  var classes = ["light-proj", "dark-proj"];
+  var flip = 0;
 
-    //* Handle projects
-    var projDiv = document.getElementById("projects");
+  var stg = ``;
+  for (var proj of ProjectList) {
+    stg = stg.concat(projFormat(proj, classes[flip]));
 
+    flip += 1;
+    flip %= 2;
+  }
 
-    var classes = ["light-proj", "dark-proj"];
-    var flip = 0;
+  projDiv.innerHTML = stg;
 
-    var stg = ``;
-    for (var proj of ProjectList) {
+  //* handle work experiences
+  var workDiv = document.getElementById("work");
+  var workStg = ``;
+  flip = 0;
+  for (var work of workList) {
+    workStg = workStg.concat(workFormat(work, classes[flip]));
 
+    flip += 1;
+    flip %= 2;
+  }
 
-        stg = stg.concat(projFormat(proj, classes[flip]));
-
-        flip += 1;
-        flip %= 2;
-    }
-
-
-    projDiv.innerHTML = stg;
-
-
-
-    //* handle work experiences
-    var workDiv = document.getElementById("work");
-    var workStg = ``;
-    flip = 0;
-    for (var work of workList) {
-        workStg = workStg.concat(workFormat(work, classes[flip]));
-
-        flip += 1;
-        flip %= 2;
-    }
-
-    workDiv.innerHTML = workStg;
-
-
-
+  workDiv.innerHTML = workStg;
 }
